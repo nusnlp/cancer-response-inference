@@ -27,7 +27,7 @@ Activate your environment,
 
 
 ## Example
-Put your models under your/home/biomegatronModel. Run prompt-based fine-tuning experiments following
+Run prompt-based fine-tuning experiments following
 ```
 	example.sh
 

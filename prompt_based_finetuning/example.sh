@@ -22,7 +22,7 @@ CUDA_VISIBLE_DEVICES=1 nohup python cli.py -d data/medical \
               --max_num_lbl_tok 2 > run_exp.log 2>&1 &
 
 
-# [EXP_FOLDER] is the trained model folder name, e.g., biomegatronModel/2023-01-26-13-26-43, then get test preds
+# [EXP_FOLDER] is the trained model folder name, e.g., 2023-01-26-13-26-43, then get test preds
 sh bin/test.sh biomegatronModel/[EXP_FOLDER]
 # Evaluate on test preds
 python get_test_scores_medical.py -y data/medical -pred biomegatronModel/[EXP_FOLDER]

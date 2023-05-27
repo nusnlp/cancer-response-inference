@@ -1,5 +1,5 @@
 """ Compute test scores """
-# python get_test_scores.py -y data/medical -pred exp_out/generic/albert-base-v2/2022-05-28-17-19-27
+# python get_test_scores.py -y data/medical -pred exp_out/2022-05-28-17-19-27
 
 import os
 import json

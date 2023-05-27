@@ -5,7 +5,8 @@ export PYTHON_EXEC=python
 
 
 ####### Example: run prompt-based fine-tuning experiments on Biomegatron cased #######
-# Train on full train set, change to data/medical/train_{} (100, 500, 1000, 5000) for subset experiemnts 
+# Please specify your data path to train on full train set or subsets, e.g., data/medical/train_{} (full, 100, 500, 1000, 5000)
+# Place your BioMegatron model files in biomegatronModel
 CUDA_VISIBLE_DEVICES=1 nohup python cli.py -d data/medical \
               -p '[TEXT1] [SEP] In summary, this is a [LBL]' \
               -v '{"0": "complete response", "1": "stable disease", "2": "progressive disease", "3": "partial response"}' \
@@ -21,8 +22,8 @@ CUDA_VISIBLE_DEVICES=1 nohup python cli.py -d data/medical \
               --max_num_lbl_tok 2 > run_exp.log 2>&1 &
 
 
-# Get test preds, put the model folder name in [EXP_FOLDER], e.g., 2023-01-26-13-26-43
+# [EXP_FOLDER] is the trained model folder name, e.g., 2023-01-26-13-26-43, then get test preds
 sh bin/test.sh biomegatron345mcased/[EXP_FOLDER]
-# Eval test
+# Evaluate on test preds
 python get_test_scores_medical.py -y data/medical -pred biomegatron345mcased/[EXP_FOLDER]
 

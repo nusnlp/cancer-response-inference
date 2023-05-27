@@ -5,8 +5,6 @@ import itertools
 from nltk.tokenize import sent_tokenize
 from tqdm import tqdm
 
-from utils import STOPWORDS, clean, dl_clean
-
 random.seed(0)
 
 def read_json(d):

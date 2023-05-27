@@ -26,7 +26,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 from transformers import AdamW
 
-from utils import STOPWORDS, clean, dl_clean, soft_cross_entropy
+from utils import soft_cross_entropy
 
 def fseed(seed=62):
     pl.seed_everything(seed)

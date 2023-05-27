@@ -1,0 +1,22 @@
+apply_query_key_layer_scaling: true
+bert_binary_head: true
+data:
+  data_prefix: ''
+encoder_seq_length: 512
+ffn_hidden_size: 4096
+hidden_dropout: 0.1
+hidden_size: 1024
+kv_channels: null
+make_vocab_size_divisible_by: 128
+max_position_embeddings: 512
+num_attention_heads: 16
+num_layers: 24
+precision: 32
+seed: 200
+tokenizer:
+  library: megatron
+  merge_file: null
+  model: null
+  type: BertWordPieceCase
+  vocab_file: nemo:8b2c88a36abf4b40ba52976353202740_vocab.txt
+vocab_file: nemo:e8d3f3a1e2ae45ec981e29e132b2e486_vocab.txt

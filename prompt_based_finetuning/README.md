@@ -27,7 +27,7 @@ Activate your environment,
 
 
 ## Example
-Run prompt-based fine-tuning experiments following
+Place your data in your home directory, e.g., /home/data/medical. Run prompt-based fine-tuning experiments following
 ```
 	example.sh
 

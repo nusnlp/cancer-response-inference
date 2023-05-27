@@ -9,7 +9,7 @@ export PYTHON_EXEC=python
 # Place your BioMegatron model files in biomegatronModel
 CUDA_VISIBLE_DEVICES=1 nohup python cli.py -d data/medical \
               -p '[TEXT1] [SEP] In summary, this is a [LBL]' \
-              -v '{"0": "complete response", "1": "stable disease", "2": "progressive disease", "3": "partial response"}' \
+              -v '{"0": "no evidence of disease", "1": "partial response", "2": "stable disease", "3": "progressive disease"}' \
               -w biomegatronModel \
               -bs 1 \
               --grad_accumulation_factor 16 \

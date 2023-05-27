@@ -3,7 +3,7 @@
 
 This repository contains the code and scripts to conduct the prompt-based fine-tuning experiments for cancer response inference.
 
-For software, we build upon the open source code of [ADAPET (Tam et al., 2021)](https://aclanthology.org/2021.emnlp-main.407/) and added our scripts and code for the experiments in this work. We conduct experiments on the [GatorTron](https://huggingface.co/AshtonIsNotHere/GatorTron-OG/tree/main) model.
+For software, we build upon the open source code of [ADAPET (Tam et al., 2021)](https://aclanthology.org/2021.emnlp-main.407/) for the experiments in this work. We conduct experiments on the [GatorTron](https://huggingface.co/AshtonIsNotHere/GatorTron-OG/tree/main) model.
 
 
 **Table of contents**
